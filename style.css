@@ -1,0 +1,27 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#city, 
+#temp, 
+#conditions {
+    background-color: #212cac;
+    color: #eee;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 10px; 
+    text-align: center;
+}
+
+#city {
+
+}
+
+#temp {
+    
+}
+
+#conditions {
+    
+}
