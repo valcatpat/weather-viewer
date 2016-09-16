@@ -39,12 +39,26 @@ var displayCity = function() {
 
 var displayTemp = function() {
     var temp = document.getElementById('temp');
-    temp.innerHTML = '<p><i class="wi wi-thermometer-exterior"></i> ' + cityTemp + ' &#8451</p>';
+    temp.innerHTML = '<p><i class="wi wi-thermometer-exterior"></i> ' + Math.ceil(cityTemp) + ' &#8451</p>';
 }
 
 var displayConditions = function() {
     var conditions = document.getElementById('conditions');
-    conditions.innerHTML = "<p>Current conditions: " + cityConditions.toLowerCase() + "</p>";
+    
+    if (cityConditions === "Thunderstorm") {
+        conditions.innerHTML = '<p><i class="wi wi-thunderstorm"></i> Thunderstorm </p>' ;
+    } else if (cityConditions === "Rain") {
+        conditions.innerHTML = '<p><i class="wi wi-rain"></i> Rain </p>';
+    } else if (cityConditions === "Drizzle") {
+        conditions.innerHTML = '<p><i class="wi wi-sprinkle"></i> Drizzle </p>';
+    } else if (cityConditions === "Snow") {
+        conditions.innerHTML = '<p><i class="wi wi-snow"></i> Snow</p>';
+    } else if (cityConditions === "Clouds") {
+        conditions.innerHTML = '<p><i class="wi wi-cloudy"></i> Clouds </p>';
+    } else {
+        conditions.innerHTML = '<p><i class="wi wi-day-sunny"></i> Clear </p>';
+    }
+
 }
 
 // make API request
