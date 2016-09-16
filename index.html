@@ -4,13 +4,37 @@
         <title>Weather Viewer</title>
         <head>
             <script src="https://use.fontawesome.com/27a26f719e.js"></script>
-            <link rel="stylesheet" type="text/css" href="style.css">
+            
+            <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+            
+            <link rel="stylesheet" href="css/weather-icons.min.css">
+            <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+            
+            <link rel="stylesheet" type="text/css" href="css/style.css">
         </head>
     </head>
     <body>
-        <div id="city"></div>
-        <div id="temp"></div>
-        <div id="conditions"></div>
+        <div class="wrapper">
+            <header>
+                <h1>Current Weather</h1>
+            </header>
+            <div id="cityDropdown">
+                <select id="citySelection">
+                    <option>Select City</option>
+                    <option value="Montreal">Montreal</option>
+                    <option value="Ottawa">Ottawa</option>
+                    <option value="Toronto">Toronto</option>
+                    <option value="Kitchener">Kitchener</option>
+                    <option value="Calgary">Calgary</option>
+                    <option value="Vancouver">Vancouver</option>
+                </select>
+            </div>
+            <div id="city"></div>
+            <div id="weatherInfo">
+                <div id="temp"></div>
+                <div id="conditions"></div>
+            </div>
+        </div>
         
         <!-- scripts -->
         
