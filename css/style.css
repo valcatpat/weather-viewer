@@ -1,0 +1,75 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 100px 15%;
+}
+
+header {
+    background-color: #efefef;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    color: #535353;
+    padding-top: 10px;
+}
+
+.wi {
+   margin-right: 10px; 
+}
+
+#cityDropdown {
+    height: 75px;
+    background-color: #efefef;
+    padding: 25px;
+}
+
+#cityDropdown select {
+    display: block;
+    margin: 0 auto;
+    color: #535353;
+}
+
+#city,
+#weatherInfo {
+    width: 50%;
+    float: left;
+    vertical-align: top;
+    min-height: 200px;
+}
+
+#temp,
+#conditions {
+    height: 100px;
+    padding: 40px 10px;
+}
+
+#city, 
+#temp, 
+#conditions {
+    background-color: #212cac;
+    color: #efefef;
+    text-align: center;
+}
+
+#city {
+    text-transform: uppercase;
+    padding-top: 75px;
+    border-bottom-left-radius: 10px;
+}
+
+#temp {
+    
+}
+
+#conditions {
+    border-bottom-right-radius: 10px;
+}
